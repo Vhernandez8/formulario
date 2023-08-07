@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+   version="6.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <data-source>
+        <description> DataSource clientes</description>
+        <name>java:app/clientesDS/</name>
+        <class-name>org.postgresql.ds.PGSimpleDataSource</class-name>
+        <server-name>localhost</server-name>
+        <portnumber>5432</portnumber>
+        <database-name>Datos_clientes</database-name>
+        <user>postgres</user>
+        <passtword>Vhernandez88$</passtword>
+        <login-timeout>Vhernandez88$</login-timeout>
+        <transactional>false</transactional>
+        <isolation-level>TRANSACTION_READ_COMMITTED</isolation-level>
+        <initial-pool-size>0</initial-pool-size>
+        <max-pool-size>5</max-pool-size>
+        <min-pool-size>2</min-pool-size>
+        <max-idle-time>0</max-idle-time>
+        <max-statements>50</max-statements>
+    </data-source>
+</web-app>
